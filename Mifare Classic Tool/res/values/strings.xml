@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2013 Gerhard Klostermeier
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+-->
+
+
+<resources>
+
+    <!-- Common stuff -->
+    <string name="app_name">ReFerID</string>
+    <string name="app_version">App Version</string>
+
+    <!-- Activity titles -->
+    <string name="title_activity_main">ReFerID</string>
+    <string name="title_activity_read_tag">Read Tag</string>
+    <string name="title_activity_dump_editor">Dump Editor</string>
+    <string name="title_activity_access_conditions">Access Conditions</string>
+    <string name="title_activity_write_tag">Write Tag</string>
+    <string name="title_activity_create_key_map">Read a ReFerID Tag</string>
+    <string name="title_activity_file_chooser">File Chooser</string>
+    <string name="title_activity_value_blocks">Value Blocks as Integers</string>
+    <string name="title_activity_key_editor">Key Editor</string>
+    <string name="title_activity_help">Help and Info</string>
+    <string name="title_activity_hex_to_ascii">Data as ASCII</string>
+    <string name="title_activity_tag_info">Tag Info</string>
+    <string name="title_activity_value_block_tool">Value Block Decoder
+        &amp; Encoder</string>
+
+    <!-- Texts (labels etc.) -->
+    <string name="text_footer"> -
+        <a href="https://github.com/referid">ReFerID Project Page</a></string>
+    <string name="text_choose_key_file"></string>
+    <string name="text_wait_read_tag">Reading tag…\n(Don\'t remove tag)</string>
+    <string name="text_key_map_progress">Key Mapping Progress:</string>
+    <string name="text_sector">Sector</string>
+    <string name="text_block">Block</string>
+    <string name="text_caption_title">Caption</string>
+    <string name="text_keya">KeyA</string>
+    <string name="text_keyb">KeyB</string>
+    <string name="text_ac">ACs</string>
+    <string name="text_uid">UID</string>
+    <string name="text_uid_and_manuf">UID &amp; ManufInfo</string>
+    <string name="text_valueblock">ValueBlock</string>
+    <string name="text_chooser_info_text">Choose a file:</string>
+    <string name="text_open_dump_title">Open Tag Dump</string>
+    <string name="text_no_files_in_chooser">No files found</string>
+    <string name="text_ac_read">Read:</string>
+    <string name="text_ac_write">Write:</string>
+    <string name="text_ac_incr">Incr.:</string>
+    <string name="text_ac_decr">Decr./Trans./Rest.:</string>
+    <string name="text_ac_pos">Location:</string>
+    <string name="text_ac_error">Error: This configuration
+        is not known</string>
+    <string name="text_vb_what">What:</string>
+    <string name="text_vb_value">Value:</string>
+    <string name="text_vb_orig">Original:</string>
+    <string name="text_vb_as_int_decoded">As Integer:</string>
+    <string name="text_sector_range"></string>
+    <string name="text_sector_range_all"></string>
+    <string name="text_update_colors">Update Colors</string>
+    <string name="text_data">Data:</string>
+    <string name="text_write_dump_info">Write a dump to
+        a tag.\nBlocks containing unknown data (---) will be skipped!</string>
+    <string name="text_factory_format_info">Try to format the tag to
+        factory/delivery state</string>
+    <string name="text_starting_at_0">(Starting at 0)</string>
+    <string name="text_open_key_file_title">Open or Create a Key File</string>
+    <string name="text_std_keys_comment">Standard Keys (auto. gen.)</string>
+    <string name="text_choose_dump_to_write">Choose the dump to be written:</string>
+    <string name="text_from">From</string>
+    <string name="text_to">To</string>
+    <string name="text_key_a">Key A</string>
+    <string name="text_key_b">Key B</string>
+    <string name="text_key_ab">Key A|B</string>
+    <string name="text_never">Never</string>
+    <string name="text_keys_not_known">Keys (A and B) not known</string>
+    <string name="text_block_read_only">Block is read-only</string>
+    <string name="text_write_key_a_not_known">Key with write access (A)
+        not known</string>
+    <string name="text_write_key_b_not_known">Key with write access (B)
+        not known</string>
+    <string name="text_ac_read_only">Access Conditions are read-only</string>
+    <string name="text_keys_read_only">Keys (A and B) are read-only</string>
+    <string name="text_invalid_ac_or_sector_dead">Invalid Access Conditions or
+        dead sector :(</string>
+    <string name="text_strange_error">Some strange error occurred :(</string>
+    <string name="text_no_mifare_support">No Mifare Classic Support!</string>
+    <string name="text_no_tag">There is no Mifare Classic tag.</string>
+    <string name="text_generic_info"></string>
+    <string name="text_mf_info">Mifare Classic Info</string>
+    <string name="text_rf_tech">RF Technology</string>
+    <string name="text_rf_tech_14a">ISO/IEC 14443, Type A</string>
+    <string name="text_atqa">ATQA</string>
+    <string name="text_sak">SAK</string>
+    <string name="text_ats">ATS</string>
+    <string name="text_tag_type_and_manuf">Tag Type and Manufacturer</string>
+    <string name="text_tag_type_guess">\'Tag Type and Manufacturer\' might be
+        wrong.\nSee \'Help and Info\' for more information.</string>
+    <string name="text_mem_size">Memory Size</string>
+    <string name="text_block_size">Block Size</string>
+    <string name="text_sector_count">Number of Sectors</string>
+    <string name="text_block_count">Number of Blocks</string>
+    <string name="text_vb">VB:</string>
+    <string name="text_vb_as_int">VB as Int:</string>
+    <string name="text_addr">Addr:</string>
+    <string name="text_copy">Copy</string>
+    <string name="text_paste">Paste</string>
+    <string name="text_share_subject_dump">MCT Dump</string>
+    <string name="text_share_subject_key_file">MCT Key File</string>
+    <string name="text_option_info">Info to option</string>
+    <string name="text_static_ac_default">08778F</string>
+    <string name="text_no_key_io_error">No keys found (or dead sector)</string>
+
+    <!-- Actions (Buttons, Checkboxs, etc. -->
+    <string name="action_read_tag">Read Tag</string>
+    <string name="action_write_tag">Write Tag</string>
+    <string name="action_edit_tag_dump">Edit Dump File</string>
+    <string name="action_edit_key_dump">Edit/Add Key File</string>
+    <string name="action_tools">Tools</string>
+    <string name="action_exit_app">Exit App</string>
+    <string name="action_nfc">Goto NFC Settings</string>
+    <string name="action_create_key_map">Map Keys to Sectors</string>
+    <string name="action_create_key_map_and_read">Start Mapping and
+        Read Tag</string>
+    <string name="action_help">Help and Info</string>
+    <string name="action_editor_only">Use Only As Editor</string>
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_choose_file">Choose Selected File</string>
+    <string name="action_open_dump_file">Open Dump File</string>
+    <string name="action_change"></string>
+    <string name="action_read_all_sectors">Read All Sectors</string>
+    <string name="action_write_block">Write Block</string>
+    <string name="action_create_key_map_and_write_block">Start Mapping and
+        Write Block</string>
+    <string name="action_create_key_map_and_write_dump">Start Mapping and
+        Write Dump</string>
+    <string name="action_create_key_map_and_factory_format">Start Mapping and
+        Format Tag</string>
+    <string name="action_write_full_dump">Select Dump</string>
+    <string name="action_i_know_what_i_am_doing">I know what I\'m doing</string>
+    <string name="action_open_key_file">Open Key File</string>
+    <string name="action_select_all"></string>
+    <string name="action_select_none"></string>
+    <string name="action_cancel_all">Cancel Writing</string>
+    <string name="action_skip_blocks">Write as Much as Possible</string>
+    <string name="action_more">Read More&#8230;</string>
+    <string name="action_decode">Decode</string>
+    <string name="action_encode">Encode</string>
+    <string name="action_wirte_block">Write Block</string>
+    <string name="action_write_dump">Write Dump (Clone)</string>
+    <string name="action_factory_format">Factory Format</string>
+    <string name="action_write_mfid">Advanced: Enable writing to
+        manufacturer block</string>
+    <string name="action_show_options">Show Options</string>
+    <string name="action_static_ac">Use these Access Conditions for all
+        sectors:</string>
+
+    <!-- Menu items -->
+    <string name="menu_save">Save</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_show_ascii">Show Data as ASCII</string>
+    <string name="menu_show_ac">Decode Access Conditions</string>
+    <string name="menu_show_value_blocks">Show Value Blocks as Int.</string>
+    <string name="menu_tag_info">Display Tag Info</string>
+    <string name="menu_vb_coder">Decode &amp; Encode Value Blocks</string>
+    <string name="menu_new_file">Create New File</string>
+    <string name="menu_delete_file">Delete File</string>
+    <string name="menu_remove_duplicates">Remove Duplicates</string>
+
+    <!-- Toast messages -->
+    <string name="info_new_tag_found">New tag found</string>
+    <string name="info_no_external_storage">Error: External storage is not
+        readable/writable</string>
+    <string name="info_no_tag_found">Error: There is no Mifare Classic tag</string>
+    <string name="info_wait_key_map">Creating key map… Please wait…</string>
+    <string name="info_tag_removed_while_reading">Error: Tag removed
+        during reading</string>
+    <string name="info_no_vb_in_dump">There are no value blocks in this dump</string>
+    <string name="info_valid_dump_not_hex">Error: Some block(s) contain
+        invalid data (not hex)</string>
+    <string name="info_valid_dump_not_4_or_16_lines">Error: Some
+        sectors don\'t have 4 or 16 blocks (lines)</string>
+    <string name="info_valid_dump_not_16_bytes">Error: Some blocks
+        don\'t have 16 bytes (32 characters)</string>
+    <string name="info_editor_init_error">Error: Data was not correct for this
+        editor</string>
+    <string name="info_no_dumps">There are no dumps.
+        Read a tag and save the dump</string>
+    <string name="info_invalid_range">Error in mapping range</string>
+    <string name="info_mapping_sector_out_of_range">Error in mapping range:
+        Sector out of range. Use a bigger tag.</string>
+    <string name="info_no_key_found">No valid key found in chosen key file</string>
+    <string name="info_data_location_not_set">Error: Block or sector is not
+        specified</string>
+    <string name="info_sector_out_of_range">Error: The sector is out of range</string>
+    <string name="info_block_out_of_range">Error: The block is out of range</string>
+    <string name="info_not_hex_data">Error: Data must be in hexadecimal
+        (0-9 and A-F)</string>
+    <string name="info_not_16_byte">Error: Data must be 16 bytes
+        (32 characters) long</string>
+    <string name="info_is_not_vb">Error: Not a value block.</string>
+    <string name="info_block_not_in_sector">Error: The sector does not contain
+        a block with the given number.</string>
+    <string name="info_error_writing_block">Error: Block is read-only
+        or not writable with keys from key file</string>
+    <string name="info_write_successful">Data successfully written</string>
+    <string name="info_none_key_valid_for_reading">Error: None of the
+        keys were valid for reading</string>
+    <string name="info_not_supported_now">This function is not
+        supported in this version.
+        (Maybe it will come with further versions&#8230;)</string>
+    <string name="info_valid_keys_no_keys">Error: There must be at
+        least one key</string>
+    <string name="info_valid_keys_not_hex">Error: Some key(s) contain
+        invalid data (not hex)</string>
+    <string name="info_valid_keys_not_6_byte"> Error: Some keys
+        don\'t have 6 bytes (12 characters)</string>
+    <string name="info_empty_file_name">Error: Files must have a name</string>
+    <string name="info_save_successful">Data successfully saved</string>
+    <string name="info_save_error">Error: Error while saving data</string>
+    <string name="info_file_already_exists">Error: File already exists</string>
+    <string name="info_tag_too_small">Error: Tag is too small for the
+        chosen dump</string>
+    <string name="info_write_error">Error: Some error occurred while
+        writing.\nThis could be really bad.</string>
+    <string name="info_check_ac_error">Error: Tag lost while checking for keys
+        with write privileges</string>
+    <string name="info_nothing_to_write">There is nothing left to write</string>
+    <string name="info_no_int_to_encode">Error: There is no integer
+        to be encoded</string>
+    <string name="info_addr_not_hex_byte">Error: Addr is not a hex byte
+        (0-9, A-F, 2 characters)</string>
+    <string name="info_copied_to_clipboard">Copied to clipboard</string>
+    <string name="info_invalid_int">Not a valid integer</string>
+    <string name="info_static_ac_not_hex">Error: Static Access Conditions are
+        not hex (0-9, A-F)</string>
+    <string name="info_static_ac_not_3_byte">Error: Static Access Conditions
+        have to be 3 bytes (6 characters) long</string>
+    <string name="info_file_to_big">Error: File is to big (out of memory)</string>
+    <string name="info_to_many_keys">Error: Too many keys (out of memory)</string>
+
+    <!-- Dialog messages -->
+    <string name="dialog_no_nfc">No NFC hardware was found on your device.
+        You need NFC in order to run this App.</string>
+    <string name="dialog_nfc_not_enabled">The NFC adapter is not enabled.
+        Please go to your Settings and enable it.</string>
+    <string name="dialog_no_nfc_title">No NFC Hardware</string>
+    <string name="dialog_nfc_not_enabled_title">NFC Not Enabled</string>
+    <string name="dialog_no_mfc_title">No Mifare Classic Support</string>
+    <string name="dialog_no_mfc">The tag (most likely) or your device
+        (due to hardware) does not support Mifare Classic! The only thing
+        possible is to display the UID and some other generic
+        information. Further I/O operations are  impossible.
+        \n\n<b>If your device does not support Mifare Classic,
+        this App is pretty much useless.</b>
+        \n\nKnown devices with no Mifare Classic support:\n
+        - Google Nexus 4\n
+        - Google Nexus 7 (2013)\n
+        - Google Nexus 10\n
+        - Samsung Galaxy S4</string>
+    <string name="dialog_save_dump_title">Save Dump</string>
+    <string name="dialog_save_dump">Enter a file name for the dump:</string>
+    <string name="dialog_mapping_range_title">Choose Range</string>
+    <string name="dialog_mapping_range">Choose the sector range for the key
+        mapping process\n(0 is the first sector):</string>
+    <string name="dialog_sector_trailer_warning_title">Writing
+        Sector Trailer</string>
+    <string name="dialog_sector_trailer_warning">You\'re about to write
+        to a sector trailer. Writing wrong data may cause irreparable
+        damage to the tag.</string>
+    <string name="dialog_save_keys_title">Save Key File</string>
+    <string name="dialog_save_keys">Enter a file name for the key file:</string>
+    <string name="dialog_new_file_title">New File</string>
+    <string name="dialog_new_file">Enter a file name for the new file:</string>
+    <string name="dialog_first_run_title">WARNING NOTICE</string>
+    <string name="dialog_first_run">This application is dedicated
+        to users who are at least a bit familiar with the
+        Mifare Classic technology. Its features are basic and at a low
+        level. Therefore nearly all data input and output will be hexadecimal.
+        Its also important that you understand what you are doing, if
+        you write data to a tag. Writing the wrong data to certain
+        blocks may cause irreparable damage to the tag.
+        \n\n<b>FOR MORE INFORMATION AND HELP CHECK OUT THE
+        \"Help and Info\" SECTION.</b></string>
+    <string name="dialog_not_writable_title">Write Issues</string>
+    <string name="dialog_not_writable">Some parts are not writable! Check the
+        WHOLE list below.</string>
+    <string name="dialog_tools_menu_title">Available Tools</string>
+    <string name="dialog_wait_write_tag_title">Writing…</string>
+    <string name="dialog_wait_write_tag">Writing tag…\n(Don\'t remove tag)</string>
+    <string name="dialog_share_title">Send Dump File to…</string>
+    <string name="dialog_block0_writing_title">Write Manufacturer Block</string>
+    <string name="dialog_block0_writing"><b>Writing to the first block of sector 0
+        is not supported on original Mifare Classic tags.</b>
+        \n\nPlease make sure you are using a special tag that
+        supports writing to the manufacturer block
+        (with a normal Mifare Classic write command).</string>
+    <string name="dialog_static_ac_title">Use static Access Conditions</string>
+    <string name="dialog_static_ac"><b>Replace all Access Conditions from the
+        dump with the chosen ones.</b>
+        \n\nThis will become in handy if the dump contains Access Conditions
+        that will be permanent for a tag. In case the reader does not check
+        them, you can easily use custom ones to make the tag reusable.
+        \n\n<b>WARNING: Writing wrong data may cause irreparable
+        damage to the tag.</b>
+    </string>
+
+    <!-- Hints -->
+    <string name="hint_hex_data">HEX, 16 bytes (e.g. 0A4F&#8230;)</string>
+    <string name="hint_hex_00">00</string>
+    <string name="hint_int_423">e.g. 423</string>
+    <string name="action_settings">Account Settings</string>
+    <string name="submitText">Confirm your Username and Password</string>
+    <string name="accountSignupFail"></string>
+    <string name="confirmPass">Confirm your Password...</string>
+    <string name="action_history">My History</string>
+</resources>

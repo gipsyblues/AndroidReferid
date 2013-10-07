@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity" >
+    <TextView
+            android:id="@+id/signupTV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your Username..."/>
+
+    <EditText
+    android:id="@+id/usernameSettings"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <requestFocus />
+    <TextView
+            android:id="@+id/signupTV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your Password..."/>
+    <EditText
+    android:id="@+id/passwordSettings"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"/>
+    <TextView
+            android:id="@+id/signupTV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm your Password..."/>
+
+    <EditText
+    android:id="@+id/passwordSettingsConfirmed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"/>
+    <Button
+            android:id="@+id/submitButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.5"
+            android:onClick="onClick"
+            android:text="Sign up for an Account!" />
+
+    <TextView
+        android:id="@+id/signupTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+</LinearLayout>
